@@ -1,0 +1,46 @@
+* {
+    /* background: black; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+.wrapper .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(241, 24, 24);
+    min-height: 100vh;
+}
+
+
+#click {
+    color: rgba(255, 255, 255, 0.87);
+    margin: 10px;
+    padding: 10px 60px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    font-size: 3em;
+    background: rgb(26, 02, 95);
+    box-shadow: 1px 2px 10px chartreuse;
+
+    transition: 0.3s ease all;
+}
+
+#click:hover {
+    transform: scale(2);
+    box-shadow: 5px 10px 10px chartreuse;
+}
+
+/* #click::after {
+    content: "";
+    background: rgba(33, 221, 42, 0.87);
+    transform: rotate(20deg);
+    translate: ;
+    display: inline-block;
+    /* padding: 10px; */
+    /* height: 100px; */
+    width: 100px;
+} */

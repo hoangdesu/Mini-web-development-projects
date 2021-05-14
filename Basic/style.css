@@ -1,0 +1,35 @@
+.box {
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 20px;
+    border: 20px solid red;
+    background-color: #0000FF;
+    color: yellow;
+    position: sticky;
+    top: 10px;
+}
+
+section {
+    position: relative;
+}
+
+p {
+    /* position: absolute; */
+    top: 0px;
+    right: 100px;
+}
+
+#box {
+    color: yellow;
+
+}
+
+.scrollbtn {
+    border: 20px solid green;
+    height: 10px;
+    width: 10;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;;
+    background: url('teemu.png') no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.card {
+    background: black;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+    transition: all 1s ease;
+    color: white;
+}
+
+.icon img {
+    background: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.button {
+    height: 30px;
+    width: 30px;
+    background: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+

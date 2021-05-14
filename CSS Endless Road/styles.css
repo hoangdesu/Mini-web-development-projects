@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#29a3ff, #0043ff);
+}
+
+.endless-road {
+    position: relative;
+    height: 20vh;
+    width: 70vw;
+    background: #45593c;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: perspective(50vh) rotateX(30deg);
+    transition: 0.5s ease;
+}
+
+.shadow {
+    position: absolute;
+    bottom: -71%;
+    left: 50%;
+    height: 50%;
+    width: 93.2%;
+    transform: translateX(-50%);
+    background: linear-gradient(#121515, transparent);
+    opacity: 0.5;
+}
+
+.endless-road::before {
+    content: '';
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #fff 0%, #fff 70%, #45593c 70%, #45593c 100%);;
+    background-size: 120px;
+    animation: rolling 0.5s linear infinite;
+}
+
+.endless-road::after {
+    content: '';
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background: #1c3528;
+    bottom: -20%;
+    transform-origin: top;
+    transform: perspective(50vh) rotateX(-25deg);
+}
+
+@keyframes rolling {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -120px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+.author {
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+    font-family: 'Indie Flower', cursive;
+    color: #fc8198;
+    font-size: 0.7rem;
+}
+
+a {
+    text-decoration: none; color: #fc8198;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.endless-road:hover {
+    /* transform: scale(1.2); */
+    transform: perspective(300px) rotateX(40deg);
+    /* transform: translate(100px); */
+    cursor: pointer;
+}
+

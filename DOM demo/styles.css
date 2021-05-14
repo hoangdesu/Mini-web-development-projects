@@ -1,0 +1,19 @@
+.container {
+    margin: 0px;
+    padding: 0px;
+    display: relative;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: red;
+    text-transform: capitalize;
+}
+
+button {
+    margin: 20px;
+    width: 10%;
+    height: 20px;
+}

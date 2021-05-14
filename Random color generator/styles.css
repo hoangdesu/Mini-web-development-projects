@@ -1,0 +1,53 @@
+* {
+    font-family: 'Baloo 2', cursive;
+    /* position: relative; */
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    transition: 0.3s ease-out;
+    background: #141622;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+button {
+    color: white;
+    background: red;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 1rem;
+    transition: 0.3s all ease;
+    border-radius: 30px;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 50px;
+}
+
+footer {
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+    margin: 10px;
+}
+
+.container2 {
+    width: 100%;
+    height: 100px;
+}

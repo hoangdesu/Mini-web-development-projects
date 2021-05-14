@@ -1,0 +1,58 @@
+:root {
+    --heartWidth: 200px;
+    --heartHeight: 200px;
+}
+
+.heart {
+    position: absolute;
+    width: var(--heartWidth);
+    height: var(--heartHeight);
+    background-color: red;
+    margin: auto;
+    transform: rotate(-45deg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* border: 4px solid blue; */
+}
+
+.heart::after {
+    content: "";
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    width: var(--heartWidth);
+    height: var(--heartHeight);
+    top: 0;
+    left: 100px;
+}
+
+.heart::before {
+    content: "";
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    width: var(--heartWidth);
+    height: var(--heartHeight);
+    top: -100px;
+    right: 0;
+}
+
+.lover {
+    position: absolute;
+    margin: auto;
+    top: 40vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: pink;
+    /* border: 5px solid red; */
+    text-align: center;
+}
+
+.lover:hover {
+    color: yellow;
+}

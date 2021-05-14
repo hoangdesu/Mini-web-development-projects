@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        li {
+            width: fit-content;
+            /* border: 1px solid black; */
+
+            list-style: none;
+            font: 2em;
+            margin: 10px;;
+        }
+
+        li:hover{
+            cursor: pointer;
+        }
+
+        .active {
+            color: red;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery</h1>
+    <ul>
+        <li class="active">Mouse</li>
+        <li>Keyboard</li>
+        <li>Monitor</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        (function($) {
+            // $('ul li').click(function() {
+            //     $(this).addClass('active').siblings('li').removeClass('active');
+            //     console.log(this);
+            // })
+
+            $('.active').click(() => {
+                console.log('clickk');
+                $(this).removeClass('active');
+                
+            })
+
+            // $('ul li')
+            // .mouseenter(function() {
+            //     $(this).addClass('active').siblings('li').removeClass('active');
+            //     console.log(this);
+        
+            // })
+            // .mouseleave(function() {
+            //     $(this).removeClass('active');
+            //     console.log(this);
+            // })
+
+        })(jQuery);
+    </script>
+</body>
+</html>

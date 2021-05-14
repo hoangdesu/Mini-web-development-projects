@@ -1,5 +1,7 @@
 let tbody = document.querySelector('tbody');
-let defaultPath = 'https://hoangdesu.github.io/Mini-web-development-projects/';
+let liveSitePath = 'https://hoangdesu.github.io/Mini-web-development-projects/';
+let projectFolderPath = 'https://github.com/hoangdesu/Mini-web-development-projects/tree/main/';
+
 
 const projects = [
     'Animated button',
@@ -24,21 +26,22 @@ const projects = [
     'jQuery'
 ]
 
-createRow = (i, name, path) => {
+createRow = (i, name, site, folder) => {
     let table = `
     <tr>
         <td>${i}</td>
-        <td>${name}</td>
-        <td><a href="${path}">Link</a></td>
+        <td><a href="${site}" target="_blank">${name}</a></td>
+        <td><a href="${folder}" target="_blank">Folder</a></td>
     </tr>`;
     return table;
 }
 
 projects.forEach((proj, i) => {
     projURL = proj.split(' ').join('%20');
-    let projectPath = defaultPath + projURL;
+    let projectPath = liveSitePath + projURL;
+    let folderPath = projectFolderPath + projURL;
     // console.log(projectPath);
-    tbody.innerHTML += createRow(i+1, proj, projectPath);
+    tbody.innerHTML += createRow(i+1, proj, projectPath, folderPath);
 })
 
 

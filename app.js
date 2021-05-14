@@ -1,6 +1,6 @@
 let tbody = document.querySelector('tbody');
 let liveSitePath = 'https://hoangdesu.github.io/Mini-web-development-projects/';
-let projectFolderPath = 'https://github.com/hoangdesu/Mini-web-development-projects/tree/main/';
+let projectFolderPath = './';
 
 
 const projects = [

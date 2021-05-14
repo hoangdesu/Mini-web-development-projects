@@ -28,6 +28,9 @@ button {
     transition: 0.3s all ease;
     border-radius: 30px;
     outline: none;
+    border: 1px solid white;
+    /* border-style: dashed; */
+    /* box-shadow: 1px 1px 1px 1px white; */
 }
 
 button:hover {
@@ -47,7 +50,11 @@ footer {
     margin: 10px;
 }
 
-.container2 {
-    width: 100%;
-    height: 100px;
+#hex:hover, #rgb:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+#copytext {
+    visibility: hidden;
 }

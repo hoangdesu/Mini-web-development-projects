@@ -33,14 +33,3 @@ a {
     transform: scale(2);
     box-shadow: 5px 10px 10px chartreuse;
 }
-
-/* #click::after {
-    content: "";
-    background: rgba(33, 221, 42, 0.87);
-    transform: rotate(20deg);
-    translate: ;
-    display: inline-block;
-    /* padding: 10px; */
-    /* height: 100px; */
-    width: 100px;
-} */

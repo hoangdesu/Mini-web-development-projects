@@ -12,19 +12,43 @@ function randomHexColorGenerator() {
 
 const changeColorBtn = document.querySelector('button');
 const body = document.querySelector('body');
-const colorCode = document.querySelector('h3');
+const hexText = document.querySelector('#hex');
+const rgbText = document.querySelector('#rgb');
+const copied = document.querySelector('#copied');
+const textarea = document.createElement('textarea');
+
+let newColor = '';
 
 changeColorBtn.addEventListener('click', () => {
-    let newColor = randomHexColorGenerator();
+    newColor = randomHexColorGenerator();
     body.style.background = newColor;
-    // body.style.color = randomHexColorGenerator();
     console.log(newColor);
-    colorCode.innerHTML = "Color code : " + newColor + " | "  + body.style.backgroundColor;
+    // colorCode.innerHTML = "Color code : " + newColor + " | "  + body.style.backgroundColor;
+    hexText.innerHTML = newColor;
+    rgbText.innerHTML = body.style.backgroundColor;
 })
 
 
-// let i = 0;
-// while (i < 10) {
-// console.log(randomHexColorGenerator());
-// i++;
-// }
+// Copy text functions
+
+function copyText(color) {
+    textarea.value = color;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'absolute';
+    textarea.style.left = '-9999px';
+
+    document.body.appendChild(textarea);
+    textarea.select();
+    textarea.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert(textarea.value + ' copied!')
+}
+
+hexText.addEventListener('click', () => {
+    copyText(newColor);
+})
+
+rgbText.addEventListener('click', () => {
+    copyText(body.style.background);
+})

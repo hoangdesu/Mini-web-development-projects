@@ -19,6 +19,7 @@ const projects = [
     'Letter counter',
     'Link hover effect',
     'Login Signup Form',
+    'Multilanguage site',
     'Popup cards',
     'Random color generator',
     'Responsive Navbar',

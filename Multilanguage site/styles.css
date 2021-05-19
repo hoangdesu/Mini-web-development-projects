@@ -1,0 +1,19 @@
+li {
+    color: blue;
+    width: fit-content;
+    display: inline-block;
+    margin: 10px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.active {
+    color: green;
+    text-decoration: underline;
+}
+
+.normal {
+    color: blue;
+}

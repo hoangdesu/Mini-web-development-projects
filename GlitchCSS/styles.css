@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 95vw;
+    height: 50vh;
+    margin: 20px auto;
+}
+
+nav {
+    width: 100vw;
+    padding: 20px 0;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #ffc;
+    text-decoration: none;
+    transform: 1s all ease;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(56, 49, 49);
+    background-color: #ffc;
+    border-radius: 12px;
+}
+
+body main {
+    display: flex;
+    height: 95vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e24949;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+    animation: glitch 3s 0s infinite alternate;
+    margin: 50px 0;
+
+}
+
+h3 {
+    color: pink;
+}
+
+
+#smoke {
+    text-align: center;
+    position: relative;
+    right: 26px;
+    bottom: 7px;
+}
+
+#sign {
+    position: relative;
+    right: 20px;
+}
+
+@keyframes glitch {
+    0% {
+        color: red;
+    }
+
+    10% {
+        color: black;
+    }
+
+    25% {
+        color: purple;
+    }
+
+    35% {
+        color: black;
+    }
+
+    50% {
+        color: brown;
+    }
+    
+    75% {
+        color: aliceblue;
+    }
+
+    100% {
+        color: pink;
+    }
+}

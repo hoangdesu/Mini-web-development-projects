@@ -16,6 +16,8 @@ const projects = [
     'CountryFlags',
     'DOM demo',
     'Expand and collapse cards',
+    'FilterListVanillaJS',
+    'GlitchCSS',
     'Letter counter',
     'Link hover effect',
     'Login Signup Form',

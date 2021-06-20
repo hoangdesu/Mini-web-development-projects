@@ -13,11 +13,11 @@
 <body>
     <main>
         <div class="container">
-            <h1 class="title is-1 has-text-centered">Favorite Champions</h1>
+            <h1 class="title is-1 has-text-centered m-5">Favorite Champions</h1>
             <input id="search" type="text" class="input p-5" placeholder="Search name...">
-            <ul class="menu-list column is-half m-5">
-                <p class="menu-label">Top</p>
-                <ul class="list">
+            <div class="menu-list columns m-5 is-flex-desktop is-justify-content-space-between">
+                <ul class="list column is-2">
+                    <p class="menu-label">Top</p>
                     <li class="item">
                         <a href="#">Riven</a>
                     </li>
@@ -34,12 +34,12 @@
                         <a href="#">Kennen</a>
                     </li>
                 </ul>
-                <p class="menu-label">Jungle</p>
-                <ul class="list">
+                <ul class="list column is-2">
+                    <p class="menu-label">Jungle</p>
                     <li class="item">
                         <a href="#">Lee Sin</a>
                     </li>
-                    <li class="item">
+                    <li class="item back">
                         <a href="#">Kindred</a>
                     </li>
                     <li class="item">
@@ -55,8 +55,8 @@
                         <a href="#">Graves</a>
                     </li>
                 </ul>
-                <p class="menu-label">Mid</p>
-                <ul class="list">
+                <ul class="list column is-2">
+                    <p class="menu-label">Mid</p>
                     <li class="item">
                         <a href="#">Zed</a>
                     </li>
@@ -82,8 +82,8 @@
                         <a href="#">Viktor</a>
                     </li>
                 </ul>
-                <p class="menu-label">ADC</p>
-                <ul class="list">
+                <ul class="list column is-2">
+                    <p class="menu-label">ADC</p>
                     <li class="item">
                         <a href="#">Jinx</a>
                     </li>
@@ -103,8 +103,8 @@
                         <a href="#">Vayne</a>
                     </li>
                 </ul>
-                <p class="menu-label">Support</p>
-                <ul class="list">
+                <ul class="list column is-2">
+                    <p class="menu-label">Support</p>
                     <li class="item">
                         <a href="#">Nautilus</a>
                     </li>
@@ -124,7 +124,7 @@
                         <a href="#">Vel'Koz</a>
                     </li>
                 </ul>
-            </ul>
+            </div>
         </div>
         <p class="is-size-7 has-text-centered m-5 mb-0">Built with Bulma CSS and VanillaJS</p>
         <p class="is-size-7 has-text-centered m-5 mt-0"><a href="http://hoangdesu.com">hoangdesu.com</a></p>

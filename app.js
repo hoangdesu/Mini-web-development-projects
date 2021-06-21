@@ -23,6 +23,7 @@ const projects = [
     'Login Signup Form',
     'Multilanguage site',
     'Popup cards',
+    'SimpleModal',
     'Random color generator',
     'Responsive Navbar',
     'Transparent Login Form',
